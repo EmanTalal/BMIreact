@@ -16,13 +16,13 @@ let culclue=()=>{
   setIbm(bim);
   
 
-  if(bim<18.5){
+  if(bim<=18.5){
     setMess('نقص في الوزن')
-}else if( bim<24.9){
+}else if( bim>=24.9){
   setMess('  وزن طبيعي')
-}else if( bim<29.9){
+}else if( bim<=29.9){
   setMess('   زيادة في الوزن')
-}else if( bim<34.9){
+}else if( bim<=34.9){
   setMess(' بدانه ')
 }else if( bim<39.0){
   setMess(' بدانه مفرطه ')
@@ -38,6 +38,8 @@ let culclue=()=>{
     <button className='btn'onClick={culclue}>  Click to Calculate BMI </button>
     
     <h3>Your BMI is: {bim}</h3>
+    <h3>Your is me: {mess}</h3>
+
     <p></p>
     </>
   )
